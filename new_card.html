@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>horse</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border: 2px solid black;
+        padding: 20px;
+        gap: 10px;
+        background-color: orange;
+        box-shadow: 10px 10px 20px black;
+      }
+      img {
+        grid-column: span 1;
+        border-radius: 50%;
+        border: 10px solid blue;
+        padding: 10px;
+        box-shadow: 10px 10px blue;
+        filter: grayscale(100%);
+      }
+      h1 {
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-family: monotype corsiva;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-left: 10px;
+        box-shadow: 10px 10px 20px black;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+        margin: 20px;
+      }
+      @media screen and (max-width: 716px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+        }
+        img {
+          grid-column: span 2;
+        }
+        .container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="Gen-2 2235254390, videoframe_0png, M 5.mp4.gif" alt="" />
+
+      <h1>Hogwarts is Calling!</h1>
+    </div>
+  </body>
+</html>
